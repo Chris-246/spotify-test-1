@@ -1,1 +1,153 @@
+.main {
+  background-color: #232323;
+}
 
+.firstMain {
+  background-color: #232323;
+  height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+}
+
+/* CSS FOR HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.title {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  font-size: 32px;
+  box-sizing: border-box;
+  color: #1bd760;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.connexionLink {
+  text-decoration: none;
+  border: solid white 1px;
+  height: 40px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: white;
+}
+
+/* CSS FOR LIST OF PLAYLISTS */
+.playlistContainer {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+
+/* CSS FOR EACH PLAYLIST BOX */
+.playlistBox {
+  width: 400px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.playlistBox:not(:nth-child(3n)) {
+  margin-right: 40px;
+}
+
+.playlistImage {
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+.textBox {
+  padding: 15px;
+  color: white;
+}
+
+.textName,
+.textDescription,
+.textOwner {
+  margin-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+  text-overflow: ellipsis;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+/* MODAL CSS */
+
+.modalBackground {
+  height: 100vh;
+  width: 100vw;
+  background-color: #999999;
+  opacity: 0.8;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  top: 0;
+}
+
+.exitModal {
+  z-index: 3;
+  position: fixed;
+  top: 30px;
+  left: calc((100% - 300px) / 2);
+}
+.exitModal:hover {
+  cursor: pointer;
+}
+
+.artistModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  opacity: 1;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  position: fixed;
+  left: calc((100% - 300px) / 2);
+  top: 50px;
+  z-index: 3;
+  font-family: "Roboto", sans-serif;
+  color: #232323;
+}
+
+.artistTitle {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.artist {
+  margin-bottom: 20px;
+}
+
+.artistBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
